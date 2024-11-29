@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif,Georgia, 'Times New Roman', Times, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8f8c8c7a;
+    color: #201f1f;
+}
+
+h1, h2, p{
+    color: white;
+}
+p{
+    margin: 30px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    background: linear-gradient(to right, #070808, #e7edea, #ecf3f1, #477dbf, #234484);
+    background-clip: text;
+    color: transparent;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+}
+nav a:hover{
+    background: linear-gradient(90deg, #FFA726, #FB8C00, #EF6C00);
+    transition: 1s;
+    border-radius: 9px ;
+    color: black;
+    padding: 5px;
+}
+
+.explore{
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 100;
+    /* font-style: normal; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 33pt;
+}
+.texto{
+    margin: 30px;
+}
+.texto p {
+    text-align: justify;
+    margin: 30px;
+}
+
+
+footer {
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    /* CASO QUEIRA O RODAPÉ FIXO */
+    /* position: fixed; */
+    /* width: 100vw; */
+}
+
+/* IMAGENS */
+ul.galeria{
+    width: 90vw;
+    height: 116vh;
+    margin: 0px auto;
+    overflow: hidden;
+    list-style: none;
+    columns: 4;
+}
+ul.galeria li{
+    float: left;
+    width: 170px;
+    height: 161px;
+    margin: 53px 0px 0px 10px;
+    border: 5px solid rgba(173, 171, 171, 0.63);
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.986);
+    box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+    transition: all .4s ease-in;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+ul.galeria li:hover{
+    transform: scale(1.5);
+}
+
+
+ul.galeria li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    /* background-color: rgba(31, 15, 255, 0.3); */
+    background: linear-gradient(to right, orange, rgba(255, 166, 0, 0.521),transparent);
+    font-size: 10pt;
+    /* line-height: 27px; */
+    padding: 5px;
+    border-radius: 30px;
+}
+ul.galeria li:hover span{
+    opacity: 1;
+}
+
+
+ul.galeria li#foto01{
+    background: url(assets/bifeangus.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto02{
+    background: url(assets/drinks.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto03{
+    background: url(assets/gnocchi.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto04{
+    background: url(assets/petitgateau.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto05{
+    background: url(assets/sanduiche.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto06{
+    background: url(assets/tortademorango.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto07{
+    background: url(assets/64-bk-5386-ayu2350-1-.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto07:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto08{
+    background: url(assets/carne-assada-na-pressao-marinada-na-cerveja.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto08:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto09{
+    background: url(assets/galinha-ensopada-receita.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto09:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto10{
+    background: url(assets/kibe-de-forno-recheado.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto10:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto11{
+    background: url(assets/mousse-chocolate-arroz-receita.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto11:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul.galeria li#foto12{
+    background: url(assets/tiramissu.jpg);
+    background-position: 50% 50%;
+    background-size: 300px 300px;
+    background-color: white;
+}
+ul.galeria li#foto12:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+
+/* Estilos para o formulário de filtro */
+h2{
+    text-align: left;
+    color: rgb(248, 248, 248);
+    /* padding-left: 10px; */
+    font-size: 13pt;
+    margin-top: 62px;
+}
+form {
+    margin: 40px 20px;
+    /* background-image: linear-gradient(to right,transparent, hsl(208, 54%, 53%),transparent,transparent,transparent);  */
+    text-align: center;
+    color: white;
+}
+.filtrar{
+    text-align: left;
+    color: rgb(248, 248, 248);
+    /* padding-left: 10px; */
+    font-size: 13pt;
+    /* margin-top: 62px; */
+    margin: 31px 90px;
+}
+label {
+    margin: 0px 20px;
+}
+
+button {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+#resultadoFiltro{
+    /* text-align: center;
+    display: flex; */
+    margin: auto;
+}
+#resultadoFiltro h3,p{
+    text-align: center;
+}
+
+#resultadoFiltro div {
+    background-color: #d6d4d086;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 50px;
+    text-align: justify;
+    width: 90%;
+}
+select,input{
+    width: 20%;
+    height: 30px;
+    margin: 20px auto;
+}
+
+/* PAGINA CONTATO */
+.h2-contato{
+    margin-left: 40px;
+}
+.informacoes-contato{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14pt;
+}
+.formulario-contato ul{
+    height: 20vh;
+}
+.informacoes-contato a{
+    text-decoration: none;
+    color: rgb(245, 242, 237);
+}
+.informacoes-contato li{
+    list-style: none;
+}
+.contato-box{
+    background-color: #8a8988a6;
+    width: 55vw;
+    margin: auto;
+    border-radius: 30px;
+    padding: 5px;
+}
+.contato-box h3:nth-child(1){
+    color: #ff7043;
+ }
+.contato-box h3:nth-child(2){
+    text-align: center;
+    color: #ff7043;
+ }
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: black;
+    font-weight: bolder;
+}
+#nome{
+    width: 30vw;
+    height: 20px;
+    margin: 10px auto;
+}
+#email{
+    width: 30vw;
+    height: 20px;
+    margin: 10px auto;
+}
+#mensagem{
+    width: 50vw;
+    height: 20vh;
+    margin: 10px auto;
+}
+button{
+    width: 20vw;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+#videoBG{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    
+}
+@media (min-aspect-ratio: 16/9){
+    #videoBG{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    #videoBG{
+        width: auto;
+        height: 100%;
+    }
+}

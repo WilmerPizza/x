@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-image: url('https://www.luvgourmet.com.br/wp-content/uploads/2017/07/melhores-panelas-para-cozinhar.png');
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Animação ao carregar */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.7); /* Fundo mais escuro */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo para o campo de senha com espaço para o ícone */
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding-right: 40px; /* Espaço para o ícone */
+    box-sizing: border-box; 
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #bbb; 
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    line-height: 1;
+}
+
+
+
+input {
+    display: block;
+    box-sizing: border-box; 
+    width: 100%;
+    backdrop-filter: blur(5px); /* Desfoque suave para efeito de vidro */
+    background: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    color: #ffffff; /* Texto branco */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Sombra suave */
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder mais claro */
+}
+
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Sombra ao focar */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #39393a; /* Cor mais escura ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.95); /* Leve redução ao clicar */
+}
+
+p {
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p a {
+    color: #ffffff; /* Cor branca */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #0f0f0f; /* Destaque ao passar o mouse */
+}
